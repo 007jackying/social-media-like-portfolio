@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import React from 'react'
+import AuthProvider from './AuthProvider'
 import NavMenu from './NavMenu'
 import './globals.css'
 
@@ -16,11 +17,13 @@ export default function RootLayout({
   children: React.ReactNode
 }): React.ReactElement {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NavMenu />
-        {children}
-      </body>
-    </html>
+    <AuthProvider>
+      <html lang="en">
+        <body className={inter.className}>
+          <NavMenu />
+          {children}
+        </body>
+      </html>
+    </AuthProvider>
   )
 }

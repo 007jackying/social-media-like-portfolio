@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import styles from './NavMenu.module.css'
+import { SignInButton } from './components/buttons'
 
 export default function NavMenu(): React.ReactElement {
   return (
@@ -27,10 +28,10 @@ export default function NavMenu(): React.ReactElement {
           <Link href={'/'}>Home</Link>
         </li>
         <li>
-          <Link href={'/dashboard'}>Dashboard</Link>
+          <Link href={'/portfolio'}>Dashboard</Link>
         </li>
         <li>
-          <Link href={'/Login'}>Login</Link>
+          <SignInButton />
         </li>
       </ul>
     </nav>

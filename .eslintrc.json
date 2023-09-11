@@ -23,6 +23,7 @@
     "prettier"
   ],
   "rules": {
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -55,7 +56,9 @@
         "classes": false,
         "variables": true
       }
-    ]
+    ],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   },
   "settings": {
     "import/resolver": {

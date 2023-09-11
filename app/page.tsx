@@ -8,7 +8,7 @@ const Home: React.FC = (): JSX.Element => {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by clicking <Link href="/dashboard">Here!</Link>
+          Get started by clicking <Link href="/porfolio">Here!</Link>
         </p>
       </div>
 
@@ -22,8 +22,6 @@ const Home: React.FC = (): JSX.Element => {
           priority
         />
       </div>
-
-      <div className={styles.grid}></div>
     </main>
   )
 }

@@ -5,6 +5,8 @@
     height: 70px;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    box-shadow: #000;
 }
 
 .links {
